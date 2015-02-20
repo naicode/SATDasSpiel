@@ -4,10 +4,8 @@ import QtQuick 2.2
 QtObject {
     id: dip
 
-
     function setupZoom() {
-        //TODO calc zoom here
-        var spaceWidth = screenWidth*pixelWrapedDensity
+		var spaceWidth = screenWidth*pixelWrapedDensity
         //console.debug("dvwidth:", spaceWidth)
         var spaceHeight = screenHeight*pixelWrapedDensity
         //console.debug("dvheigh:", spaceHeight)
@@ -19,10 +17,6 @@ QtObject {
             return spaceArea/lowerBoundZoomSpace;
         }
         return 1
-    }
-
-    function screenUnits() {
-        return
     }
 
 
